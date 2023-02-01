@@ -13,7 +13,22 @@ export default function GlobalContextProvider({ children }) {
     const [scores, setScores] = useState(localStorage.getItem("scores") || "");
 
     const [user, setUser] = useState({});
-
+    
+    const getScores = async () => {
+        try {
+            const response = await axios.get(
+                `${process.env.REACT_APP_BASE_URL}:${process.env.REACT_APP_REST_PORT}/scores`,
+            );
+            console.log("this is the response", response);
+            if (response.data.data > 0) {
+                setScores(response.data.data);
+            } else {
+                setScores([])
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    };
     const getUser = async () => {
         try {
             const response = await axios.get(
@@ -34,6 +49,10 @@ export default function GlobalContextProvider({ children }) {
     useEffect(() => {
         getUser();
     }, [token]);
+
+    useEffect(() => {
+        getScores();
+    }, []);
 
     const [errorsFromServer, setErrorsFromServer] = useState("");
 
