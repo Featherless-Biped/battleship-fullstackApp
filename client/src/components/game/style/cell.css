@@ -1,0 +1,57 @@
+.cell {
+  border: solid 1px #008000;
+  border-radius: 3px;
+  margin: 1px;
+}
+
+.cell-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.cell-ship {
+  background: repeating-linear-gradient(
+    30deg,
+    orange 0,
+    orange 1px,
+    transparent 2px,
+    transparent 3px
+  );
+}
+
+.cell-unknown {
+  background-color: lightgray;
+}
+
+.cell-s-empty {
+  filter: invert(24%) sepia(63%) saturate(2716%) hue-rotate(95deg)
+    brightness(103%) contrast(108%);
+}
+.cell-w-ship {
+  background: repeating-linear-gradient(
+    30deg,
+    #ffa500 0,
+    orange 1px,
+    transparent 2px,
+    transparent 3px
+  );
+}
+
+.cell-w-ship > img {
+  filter: invert(18%) sepia(99%) saturate(7210%) hue-rotate(359deg)
+    brightness(111%) contrast(109%);
+}
+
+.cell-d-ship {
+  background: repeating-linear-gradient(
+    30deg,
+    #ff0000 0,
+    #ff0000 1px,
+    transparent 2px,
+    transparent 3px
+  );
+}
+.cell-d-ship > img {
+  filter: invert(24%) sepia(63%) saturate(2716%) hue-rotate(95deg)
+    brightness(103%) contrast(108%);
+}

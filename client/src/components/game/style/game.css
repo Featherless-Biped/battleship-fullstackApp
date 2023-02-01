@@ -1,0 +1,67 @@
+.game-container {
+  color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Retro Gaming";
+}
+@font-face {
+  font-family: "Retro Gaming";
+  src: url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.eot");
+  src: url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.svg#Retro Gaming")
+      format("svg");
+}
+.select-cont {
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  overflow-x: scroll;
+  margin-top: 1.5rem;
+}
+/* 
+.select-cont  >:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+} */
+
+.select-item {
+  padding: 5px;
+  border: solid 1px gray;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+.select-cont-selected {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-container {
+  margin-left: 60px;
+}
+
+.pointer {
+  cursor: pointer;
+}

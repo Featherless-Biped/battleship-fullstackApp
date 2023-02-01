@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Press Start 2P");
+
+.login-form {
+    margin-top: 35px;
+}
+
+.form-email {
+    position: relative;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.3em;
+    border: 2px solid #4c4c4c;
+    background-color: #EDE6E3;
+    width: 50%;
+}
+
+.form-email:focus, .form-password:focus, .form-firstName:focus, .form-lastName:focus {
+    border: 2px solid #f06549d0;
+    outline: none;
+}
+
+.form-password {
+    position: relative;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.3em;
+    border: 2px solid #4c4c4c;
+    background-color: #EDE6E3;
+    width: 50%;
+}
+
+.form-btn-login {
+    top: 66% !important;
+    font-family: "Orbitron", sans-serif !important;
+    font-size: 0.3em !important;
+    border: 2px solid #4c4c4c !important;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.icon {
+    position: absolute;
+    font-size: 6px;
+    top: 49%;
+    left: 2.75rem;
+    color: #4c4c4c;
+}
+
+.eye-icon {
+    position: absolute;
+    font-size: 6px;
+    top: 50%;
+    right: 2.75rem;
+    color: #f06549a2;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon input {
+    padding-left: 1.5rem;
+}
+
+.signup-form {
+    margin-top: 4px;
+}
+
+.form-btn-signup {
+    top: 91% !important;
+    font-family: "Orbitron", sans-serif !important;
+    font-size: 0.3em !important;
+    border: 2px solid #4c4c4c !important;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.form-firstName {
+    position: relative;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.3em;
+    border: 2px solid #4c4c4c;
+    background-color: #EDE6E3;
+    width: 50%;
+}
+
+.form-lastName {
+    position: relative;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.3em;
+    border: 2px solid #4c4c4c;
+    background-color: #EDE6E3;
+    width: 50%;
+}
