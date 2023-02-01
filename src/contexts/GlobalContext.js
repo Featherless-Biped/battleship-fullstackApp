@@ -17,7 +17,7 @@ export default function GlobalContextProvider({ children }) {
     const getScores = async () => {
         try {
             const response = await axios.get(
-                `${process.env.REACT_APP_BASE_URL}:${process.env.REACT_APP_REST_PORT}/scores`,
+                `${process.env.REACT_APP_BASE_URL}/scores`,
             );
             console.log("this is the response", response);
             if (response.data.data > 0) {

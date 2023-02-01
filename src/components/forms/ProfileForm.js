@@ -35,7 +35,7 @@ const ProfileForm = () => {
     const handleChangeProfile = async (e) => {
         try {
             const res = await axios.put(
-                `${process.env.REACT_APP_BASE_URL}:${process.env.REACT_APP_REST_PORT}/users/${userId}`,
+                `${process.env.REACT_APP_BASE_URL}/users/${userId}`,
                 formData,
                 { headers: { Authorization: `Bearer ${token}` } }
             );

@@ -29,7 +29,7 @@ const LogInForm = ({ setButtonClicked }) => {
         e.preventDefault();
         try {
             const res = await axios.post(
-                `${process.env.REACT_APP_BASE_URL}:${process.env.REACT_APP_REST_PORT}/auth/login`,
+                `${process.env.REACT_APP_BASE_URL}/auth/login`,
                 formData
             );
             if (res.data.token) {
